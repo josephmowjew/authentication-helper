@@ -11,7 +11,7 @@ import (
 func main() {
 	// Create a custom configuration for the authentication service
 	config := auth_client.NewConfig(
-		"https://staging-permissions.lyvepulse.com/permissions/authenticate/login", // Replace with your authentication service URL
+		"https://your-auth-service-url", // Replace with your authentication service URL
 		// Custom options
 		func(c *auth_client.Config) {
 			c.Timeout = 15 * time.Second // Custom timeout
@@ -19,8 +19,8 @@ func main() {
 	)
 
 	// Attempt authentication
-	username := "no-reply@opssify.com"
-	password := "M24eMjVYR4"
+	username := "your-username@example.com" // Replace with your username
+	password := "your-password"           // Replace with your password
 
 	// Perform authentication
 	response, err := auth_client.Authenticate(username, password, config)
