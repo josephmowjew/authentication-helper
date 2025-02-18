@@ -1,4 +1,4 @@
-module github.com/josephmojoo/authentication-helper
+module github.com/josephmowjew/authentication-helper
 
 go 1.23.4
 

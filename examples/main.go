@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	auth_client "github.com/josephmojoo/authentication-helper/pkg/token"
+	auth_client "github.com/josephmowjew/authentication-helper/pkg/token"
 )
 
 func main() {
@@ -20,7 +20,7 @@ func main() {
 
 	// Attempt authentication
 	username := "your-username@example.com" // Replace with your username
-	password := "your-password"           // Replace with your password
+	password := "your-password"             // Replace with your password
 
 	// Perform authentication
 	response, err := auth_client.Authenticate(username, password, config)

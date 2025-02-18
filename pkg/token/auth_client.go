@@ -8,14 +8,14 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/josephmojoo/authentication-helper/pkg/models"
+	"github.com/josephmowjew/authentication-helper/pkg/models"
 )
 
 // Config holds configuration for authentication service
 type Config struct {
-	BaseURL         string
-	HTTPClient      *http.Client
-	Timeout         time.Duration
+	BaseURL    string
+	HTTPClient *http.Client
+	Timeout    time.Duration
 }
 
 // DefaultConfig creates a new configuration with default values
